@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "GitHubEventSummary": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 0",
+      "launchBrowser": false
+    }
+  }
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubEventHandler", "GitHubEventHandler\GitHubEventHandler.csproj", "{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubEventHandlerTest", "GitHubEventHandlerTest\GitHubEventHandlerTest.csproj", "{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D65AF6BD-687D-4B67-8060-19095AA20729}
+	EndGlobalSection
+EndGlobal
