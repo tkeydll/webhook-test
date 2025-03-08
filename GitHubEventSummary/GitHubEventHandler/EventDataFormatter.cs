@@ -56,7 +56,7 @@ namespace GitHubEventHandler
                 var fieldObject = (JObject)jsonObject[fieldName];
 
                 // Keep only specific properties
-                var propertiesToKeep = new HashSet<string> { "url", "id", "title", "user", "labels", "state", "milestone", "created_at", "updated_at", "closed_at", "body", "changes", "pull_request" };
+                var propertiesToKeep = new HashSet<string> { "url", "id", "title", "user", "labels", "state", "assignees", "milestone", "created_at", "updated_at", "closed_at", "body", "changes", "pull_request" };
                 var propertiesToRemove = fieldObject.Properties().Where(p => !propertiesToKeep.Contains(p.Name)).ToList();
                 foreach (var prop in propertiesToRemove)
                 {
@@ -65,6 +65,7 @@ namespace GitHubEventHandler
 
                 // Format user field
                 FormatUserField(fieldObject, "user");
+                FormatUserField(fieldObject, "assignees");
 
                 // Format labels field
                 if (fieldObject["labels"] != null)

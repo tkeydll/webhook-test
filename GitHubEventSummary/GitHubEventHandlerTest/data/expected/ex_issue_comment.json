@@ -13,7 +13,6 @@
             }
         ],
         "state": "open",
-        "locked": false,
         "assignees": [
             {
                 "login": "tkeydll"
