@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj": {}
+    "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj": {
+    "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj",
+        "projectUniqueName": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj",
         "projectName": "GitHubEventHandlerTest",
-        "projectPath": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj",
+        "projectPath": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj",
         "packagesPath": "C:\\Users\\tkeyd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\obj\\",
+        "outputPath": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandlerTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj": {
-                "projectPath": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj"
+              "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj": {
+                "projectPath": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj": {
+    "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj",
+        "projectUniqueName": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj",
         "projectName": "GitHubEventHandler",
-        "projectPath": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj",
+        "projectPath": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandler\\GitHubEventHandler.csproj",
         "packagesPath": "C:\\Users\\tkeyd\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\obj\\",
+        "outputPath": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandler\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

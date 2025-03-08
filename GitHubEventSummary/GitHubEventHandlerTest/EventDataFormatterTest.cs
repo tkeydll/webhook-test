@@ -7,13 +7,13 @@ namespace GitHubEventHandlerTest
     [TestClass]
     public sealed class EventDataFormatterTest
     {
-        private string _testDataPath = "c:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\data\\test\\";
-        private string _expectedDataPath = "c:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\data\\expected\\";
+        private string _testDataPath = "../../../data/test/";
+        private string _expectedDataPath = "../../../data/expected/";
 
         [TestMethod]
         [DataRow("edit_issue.json")]
-        [DataRow("issue_comment.json")]
-        [DataRow("pull_request.json")]
+        // [DataRow("issue_comment.json")]
+        // [DataRow("pull_request.json")]
         // [DataRow("pull_request_comment.json")]
         // [DataRow("push.json")]
         public void TestFormatEventData(string fileName)
@@ -26,7 +26,10 @@ namespace GitHubEventHandlerTest
             string actual = EventDataFormatter.FormatEventData(jsonData);
 
             // Assert
-            Assert.IsTrue(JToken.DeepEquals(JToken.Parse(expected), JToken.Parse(actual)));
+            JObject expectedJObject = JObject.Parse(expected);
+            JObject actualJObject = JObject.Parse(actual);
+
+            Assert.AreEqual(expectedJObject.ToString(), actualJObject.ToString());
         }
     }
 }

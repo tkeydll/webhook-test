@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eCa419nBMBU=",
+  "dgSpecHash": "kplsYAGCaHw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj",
+  "projectFilePath": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tkeyd\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\tkeyd\\.nuget\\packages\\google.protobuf\\3.28.0\\google.protobuf.3.28.0.nupkg.sha512",

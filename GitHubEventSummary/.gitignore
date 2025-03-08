@@ -16,3 +16,5 @@ obj/
 
 # Ignore test result files
 TestResults/
+
+.vs/
