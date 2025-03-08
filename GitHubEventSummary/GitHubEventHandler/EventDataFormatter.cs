@@ -81,6 +81,13 @@ namespace GitHubEventHandler
                         }
                     }
                 }
+
+                // Format issue field
+                if (fieldName == "issue")
+                {
+                    fieldObject.Remove("pull_request");
+                }
+
             }
         }
 

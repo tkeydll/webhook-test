@@ -1,0 +1,30 @@
+{
+    "action": "created",
+    "issue": {
+        "url": "https://api.github.com/repos/tkeydll/webhook-test/issues/2",
+        "id": 2889405642,
+        "title": "#1 プルリクエストのテスト",
+        "user": {
+            "login": "tkeydll"
+        },
+        "labels": [],
+        "state": "open",
+        "assignees": [],
+        "milestone": null,
+        "created_at": "2025-03-02T08:24:30Z",
+        "updated_at": "2025-03-02T08:24:41Z",
+        "closed_at": null,
+        "body": "New"
+    },
+    "comment": {
+        "url": "https://api.github.com/repos/tkeydll/webhook-test/issues/comments/2692618598",
+        "id": 2692618598,
+        "user": {
+            "login": "tkeydll"
+        },
+        "created_at": "2025-03-02T08:24:39Z",
+        "updated_at": "2025-03-02T08:24:39Z",
+        "body": "プルリクエストのコメント"
+    },
+    "id": "870e8625-a3ca-42f7-9193-4d87584fd90c"
+}
