@@ -15,7 +15,7 @@ namespace GitHubEventHandlerTest
         [DataRow("issue_comment.json")]
         [DataRow("pull_request.json")]
         [DataRow("pull_request_comment.json")]
-        // [DataRow("push.json")]
+        [DataRow("push.json")]
         public void TestFormatEventData(string fileName)
         {
             // Arrange

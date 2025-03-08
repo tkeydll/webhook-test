@@ -13,6 +13,12 @@ namespace GitHubEventHandler
         {
             var jsonObject = JObject.Parse(jsonData);
 
+            // Add action field if it doesn't exist
+            if (jsonObject["action"] == null)
+            {
+                jsonObject.AddFirst(new JProperty("action", "push"));
+            }
+
             // Remove repository and sender and metadata fields
             jsonObject.Remove("repository");
             jsonObject.Remove("sender");
@@ -21,6 +27,7 @@ namespace GitHubEventHandler
             jsonObject.Remove("_etag");
             jsonObject.Remove("_attachments");
             jsonObject.Remove("_ts");
+            jsonObject.Remove("head_commit");
 
             // Format issue, comment, and pull_request fields
             FormatField(jsonObject, "issue");
