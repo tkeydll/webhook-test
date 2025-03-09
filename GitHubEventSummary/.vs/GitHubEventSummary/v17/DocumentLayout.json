@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\",
+  "WorkspaceRootPath": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}|GitHubEventHandler\\GitHubEventHandler.csproj|c:\\users\\tkeyd\\git\\github-event\\githubeventsummary\\githubeventhandler\\eventdataformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}|GitHubEventHandler\\GitHubEventHandler.csproj|solutionrelative:githubeventhandler\\eventdataformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}|GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj|c:\\users\\tkeyd\\git\\github-event\\githubeventsummary\\githubeventhandlertest\\eventdataformattertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}|GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj|c:\\users\\tkeyd\\git\\webhook-test\\githubeventsummary\\githubeventhandlertest\\eventdataformattertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}|GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj|solutionrelative:githubeventhandlertest\\eventdataformattertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}|GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj|c:\\users\\tkeyd\\git\\github-event\\githubeventsummary\\githubeventhandlertest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B832598-8B0F-42CD-86A5-0AF81A68EE7D}|GitHubEventHandlerTest\\GitHubEventHandlerTest.csproj|solutionrelative:githubeventhandlertest\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}|GitHubEventHandler\\GitHubEventHandler.csproj|c:\\users\\tkeyd\\git\\github-event\\githubeventsummary\\githubeventhandler\\savetocosmosdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}|GitHubEventHandler\\GitHubEventHandler.csproj|solutionrelative:githubeventhandler\\savetocosmosdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}|GitHubEventHandler\\GitHubEventHandler.csproj|c:\\users\\tkeyd\\git\\github-event\\githubeventsummary\\githubeventhandler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}|GitHubEventHandler\\GitHubEventHandler.csproj|solutionrelative:githubeventhandler\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}|GitHubEventHandler\\GitHubEventHandler.csproj|c:\\users\\tkeyd\\git\\webhook-test\\githubeventsummary\\githubeventhandler\\eventdataformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{47B96AD8-FA9E-4E84-88FA-BFD9C91E8784}|GitHubEventHandler\\GitHubEventHandler.csproj|solutionrelative:githubeventhandler\\eventdataformatter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "EventDataFormatterTest.cs",
-              "DocumentMoniker": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\EventDataFormatterTest.cs",
+              "DocumentMoniker": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandlerTest\\EventDataFormatterTest.cs",
               "RelativeDocumentMoniker": "GitHubEventHandlerTest\\EventDataFormatterTest.cs",
-              "ToolTip": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\EventDataFormatterTest.cs",
+              "ToolTip": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandlerTest\\EventDataFormatterTest.cs",
               "RelativeToolTip": "GitHubEventHandlerTest\\EventDataFormatterTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T07:10:28.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MSTestSettings.cs",
-              "DocumentMoniker": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\MSTestSettings.cs",
-              "RelativeDocumentMoniker": "GitHubEventHandlerTest\\MSTestSettings.cs",
-              "ToolTip": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandlerTest\\MSTestSettings.cs",
-              "RelativeToolTip": "GitHubEventHandlerTest\\MSTestSettings.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T07:04:58.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EventDataFormatter.cs",
-              "DocumentMoniker": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\EventDataFormatter.cs",
+              "DocumentMoniker": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandler\\EventDataFormatter.cs",
               "RelativeDocumentMoniker": "GitHubEventHandler\\EventDataFormatter.cs",
-              "ToolTip": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\EventDataFormatter.cs",
+              "ToolTip": "C:\\Users\\tkeyd\\git\\webhook-test\\GitHubEventSummary\\GitHubEventHandler\\EventDataFormatter.cs",
               "RelativeToolTip": "GitHubEventHandler\\EventDataFormatter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-02T06:57:43.528Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\Program.cs",
-              "RelativeDocumentMoniker": "GitHubEventHandler\\Program.cs",
-              "ToolTip": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\Program.cs",
-              "RelativeToolTip": "GitHubEventHandler\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:50:11.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SaveToCosmosDb.cs",
-              "DocumentMoniker": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\SaveToCosmosDb.cs",
-              "RelativeDocumentMoniker": "GitHubEventHandler\\SaveToCosmosDb.cs",
-              "ToolTip": "C:\\Users\\tkeyd\\git\\github-event\\GitHubEventSummary\\GitHubEventHandler\\SaveToCosmosDb.cs",
-              "RelativeToolTip": "GitHubEventHandler\\SaveToCosmosDb.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T08:38:16.09Z"
             }
           ]
         }

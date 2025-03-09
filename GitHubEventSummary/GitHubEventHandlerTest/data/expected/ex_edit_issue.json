@@ -4,13 +4,15 @@
         "url": "https://api.github.com/repos/tkeydll/webhook-test/issues/1",
         "id": 2850845393,
         "title": "テストIssue",
+        "user": {
+            "login": "tkeydll"
+        },
         "labels": [
             {
                 "description": "Good for newcomers"
             }
         ],
         "state": "open",
-        "locked": false,
         "assignees": [
             {
                 "login": "tkeydll"

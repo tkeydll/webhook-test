@@ -13,6 +13,12 @@ namespace GitHubEventHandler
         {
             var jsonObject = JObject.Parse(jsonData);
 
+            // Add action field if it doesn't exist
+            if (jsonObject["action"] == null)
+            {
+                jsonObject.AddFirst(new JProperty("action", "push"));
+            }
+
             // Remove repository and sender and metadata fields
             jsonObject.Remove("repository");
             jsonObject.Remove("sender");
@@ -21,11 +27,31 @@ namespace GitHubEventHandler
             jsonObject.Remove("_etag");
             jsonObject.Remove("_attachments");
             jsonObject.Remove("_ts");
+            jsonObject.Remove("head_commit");
 
             // Format issue, comment, and pull_request fields
             FormatField(jsonObject, "issue");
             FormatField(jsonObject, "comment");
             FormatField(jsonObject, "pull_request");
+
+            // Remove additional fields
+            jsonObject.Remove("repository_url");
+            jsonObject.Remove("labels_url");
+            jsonObject.Remove("comments_url");
+            jsonObject.Remove("events_url");
+            jsonObject.Remove("html_url");
+            jsonObject.Remove("node_id");
+            jsonObject.Remove("number");
+            jsonObject.Remove("author_association");
+            jsonObject.Remove("sub_issues_summary");
+            jsonObject.Remove("active_lock_reason");
+            jsonObject.Remove("reactions");
+            jsonObject.Remove("timeline_url");
+            jsonObject.Remove("performed_via_github_app");
+            jsonObject.Remove("state_reason");
+
+            // Remove null fields
+            RemoveNullFields(jsonObject);
 
             return jsonObject.ToString(Newtonsoft.Json.Formatting.Indented);
         }
@@ -37,14 +63,14 @@ namespace GitHubEventHandler
                 var fieldObject = (JObject)jsonObject[fieldName];
 
                 // Keep only specific properties
-                var propertiesToKeep = new HashSet<string> { "url", "id", "title", "user", "labels", "state", "locked", "assignees", "milestone", "created_at", "updated_at", "closed_at", "body", "changes", "pull_request" };
+                var propertiesToKeep = new HashSet<string> { "url", "id", "title", "user", "labels", "state", "assignees", "milestone", "created_at", "updated_at", "closed_at", "body", "changes", "pull_request", "merged_at", "requested_reviewers" };
                 var propertiesToRemove = fieldObject.Properties().Where(p => !propertiesToKeep.Contains(p.Name)).ToList();
                 foreach (var prop in propertiesToRemove)
                 {
                     prop.Remove();
                 }
 
-                // Format user and assignees fields
+                // Format user field
                 FormatUserField(fieldObject, "user");
                 FormatUserField(fieldObject, "assignees");
 
@@ -62,6 +88,13 @@ namespace GitHubEventHandler
                         }
                     }
                 }
+
+                // Format issue field
+                if (fieldName == "issue")
+                {
+                    fieldObject.Remove("pull_request");
+                }
+
             }
         }
 
@@ -92,6 +125,15 @@ namespace GitHubEventHandler
                         prop.Remove();
                     }
                 }
+            }
+        }
+
+        private static void RemoveNullFields(JObject jsonObject)
+        {
+            var propertiesToRemove = jsonObject.Properties().Where(p => p.Value.Type == JTokenType.Null).ToList();
+            foreach (var prop in propertiesToRemove)
+            {
+                prop.Remove();
             }
         }
     }

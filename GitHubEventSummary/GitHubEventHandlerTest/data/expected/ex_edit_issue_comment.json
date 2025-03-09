@@ -1,5 +1,10 @@
 {
-    "action": "created",
+    "action": "edited",
+    "changes": {
+        "body": {
+            "from": "ああああ"
+        }
+    },
     "issue": {
         "url": "https://api.github.com/repos/tkeydll/webhook-test/issues/1",
         "id": 2850845393,
@@ -20,19 +25,19 @@
         ],
         "milestone": null,
         "created_at": "2025-02-13T12:04:38Z",
-        "updated_at": "2025-03-01T11:54:44Z",
+        "updated_at": "2025-03-09T07:42:49Z",
         "closed_at": null,
-        "body": "これはテストです。\n"
+        "body": "これはテストです。\n\nEdit Issue"
     },
     "comment": {
-        "url": "https://api.github.com/repos/tkeydll/webhook-test/issues/comments/2692167676",
-        "id": 2692167676,
+        "url": "https://api.github.com/repos/tkeydll/webhook-test/issues/comments/2708715270",
+        "id": 2708715270,
         "user": {
             "login": "tkeydll"
         },
-        "created_at": "2025-03-01T11:54:43Z",
-        "updated_at": "2025-03-01T11:54:43Z",
-        "body": "aaa"
+        "created_at": "2025-03-09T07:33:47Z",
+        "updated_at": "2025-03-09T07:42:49Z",
+        "body": "ああああやばい！"
     },
-    "id": "55eccf78-61a0-4146-b508-52f4d4488d54"
-}
+    "id": "1c149e40-e1e7-435e-8864-de778e060279"
+ }
