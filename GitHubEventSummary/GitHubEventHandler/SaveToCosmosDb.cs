@@ -6,6 +6,8 @@ using Microsoft.Azure.Cosmos;
 using System.IO;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Microsoft.Azure.WebJobs;
+using System.Configuration;
 
 namespace GitHubEventHandler
 {
@@ -22,7 +24,7 @@ namespace GitHubEventHandler
         }
 
 
-        [Function("SaveToCosmosDb")]
+        [Function("SaveRawEventData")]
         public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req)
         {
             _logger.LogInformation("C# HTTP trigger function processed a request.");
@@ -52,5 +54,6 @@ namespace GitHubEventHandler
 
             return new OkObjectResult("Data saved to Cosmos DB!");
         }
+
     }
 }
