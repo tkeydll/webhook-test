@@ -32,26 +32,28 @@ namespace GitHubEventHandler
 
             ChatClient chatClient = _client.GetChatClient("gpt-4o-mini");
 
-            // 入力の json をシリアライズ
+            // 入力の json をシリアライズして最小化
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            _logger.LogInformation($"Request Body: {requestBody}");
+            // _logger.LogInformation($"Request Body: {requestBody}");
+
+            // JSONを最小化
+            string minimizedRequestBody = JsonSerializer.Serialize(JsonSerializer.Deserialize<object>(requestBody), new JsonSerializerOptions
+            {
+                WriteIndented = false
+            });
+            _logger.LogInformation($"Minimized Request Body: {minimizedRequestBody}");
 
             ChatCompletion completion = await chatClient.CompleteChatAsync(
                 [
                     new SystemChatMessage("あなたはプロジェクトマネジメントのエキスパートです。GitHub のイベントからプロジェクトの進捗を把握し、問題点を見つけ出します。"),
                     new UserChatMessage("以下の GitHub イベントを Issue 単位で要約してください。プルリクエストやプッシュは Issue に関連付けてください。"),
-                    new UserChatMessage(requestBody),
+                    new UserChatMessage(minimizedRequestBody),
                 ]
             );
 
-            string completionJson = JsonSerializer.Serialize(completion, new JsonSerializerOptions
-            {
-                WriteIndented = true // 見やすいフォーマットで出力
-            });
+            _logger.LogInformation($"Chat Completion: {completion.Content.FirstOrDefault().Text}");
 
-            _logger.LogInformation($"Completion: {completionJson}");
-
-            return new OkObjectResult(completionJson);
+            return new OkObjectResult(completion);
         }
 
     }
